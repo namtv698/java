@@ -11,3 +11,5 @@ Trong java tính đóng gọi thể hiện qua các từ khoá truy cập như `
     | Def|   O   |    O    |     X    |      X      |
     | Pro|   O   |    O    |     O    |      X      |
     | Pub|   O   |    O    |     O    |      X      |
+
+Tính đóng gói giúp bảo vệ dữ liệu và kiểm soát dữ liệu được truy cập và cập nhật, từ đó giúp chương trình dễ bảo trì và ít lỗi hơn.

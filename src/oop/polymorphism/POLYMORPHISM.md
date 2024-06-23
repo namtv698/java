@@ -1,0 +1,3 @@
+# POLYMORPHISM
+- Cho phép các phương thức có cùng tên có thể hoạt động theo cách khác nhau, tuỳ thuộc vào đối tượng mà chúng được gọi. Đa hình có thể thực hiện thông qua hai cách chính `Ghi đè phương thức` (method overridding - Override) và `nạp chồng phương thức` (method overloading - Phương thức có cùng tên khác nhau về cách thức xử lý, in-out put).
+- Tính đa hình cho mã nguồn trở lên linh hoạt và dễ mở rộng hơn, cho phép các phương thức có thể hoạt động với nhiều kiểu dữ liệu và kịch bản khác nhau.
