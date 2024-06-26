@@ -1,3 +1,30 @@
 # POLYMORPHISM
-- Cho phép các phương thức có cùng tên có thể hoạt động theo cách khác nhau, tuỳ thuộc vào đối tượng mà chúng được gọi. Đa hình có thể thực hiện thông qua hai cách chính `Ghi đè phương thức` (method overridding - Override) và `nạp chồng phương thức` (method overloading - Phương thức có cùng tên khác nhau về cách thức xử lý, in-out put).
-- Tính đa hình cho mã nguồn trở lên linh hoạt và dễ mở rộng hơn, cho phép các phương thức có thể hoạt động với nhiều kiểu dữ liệu và kịch bản khác nhau.
+Đa hình cho phép các đối tượng của các lớp khác nhau có thể được xử lý thông qua cùng một giao diện. Tính đa hình cho mã nguồn trở lên linh hoạt và dễ mở rộng hơn, cho phép các phương thức có thể hoạt động với nhiều kiểu dữ liệu và kịch bản khác nhau.
+```java
+public interface Animal {
+    void makeSound();
+}
+
+public class Dog implements Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+
+public class Cat implements Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+
+public class TestPolymorphism {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+        myDog.makeSound();
+        myCat.makeSound();
+    }
+}
+```

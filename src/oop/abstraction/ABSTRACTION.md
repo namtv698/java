@@ -1,3 +1,20 @@
 # ABSTRACTION
-- `Tính trừu tượng` giúp che giấu các chi tiết và chỉ hiển thị các chức năng cần thiết cho người dùng. Điều này giảm độ phức tạp của hệ thống và tăng tính bảo mật của dữ liệu. Tính trừu tượng thường được thực hiện bằng cách sử dụng các lớp trừu tượng (`abstraction class`) và các giao diện (`interface`). 
-Tính trừu tượng giúp các lập trình viên tập trung và các chức năng cốt lõi mà đối tượng cần thực hiện, thay vì các chi tiết cụ thể, giúp mã nguồn dễ đọc, dễ hiểu và dễ bảo trì hơn.
+`Tính trừu tượng` giúp che giấu các chi tiết và chỉ hiển thị các chức năng cần thiết cho người dùng. Điều này giảm độ phức tạp của hệ thống và tăng tính bảo mật của dữ liệu.
+```java
+public abstract class Animal {
+    protected String name;
+
+    public abstract void makeSound();
+
+    public void sleep() {
+        System.out.println("This animal is sleeping.");
+    }
+}
+
+public class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+```
