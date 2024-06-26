@@ -1,5 +1,5 @@
-# OOP (Object Oriented Programming): 
-Một phương pháp lập trình dựa trên khái niệm "đối tượng" (object), giúp lập trình viên thiết kế phần mềm theo cách gần gũi với thế giới thực hơn. Dưới đây là khái niệm cơ bản về OOP:
+# OOP (Object Oriented Programming)
+Lập trình hướng đối tượng (OOP) là một mô hình lập trình dựa trên khái niệm về "đối tượng (object)", là các thực thể chứa dữ liệu và phương thức. OOP giúp cải thiện tính mô-dun, tính mở rộng và khả năng tái sử dụng mã nguồn.
  1. **Đối tượng** (Object): Đối tượng là một thực thể trong chương trình có trạng thái và hành vi. Ví dụ: một chiếc xe có trạng thái (Màu sắc, số chỗ ngồi ...) và hành vi (dừng chạy...).
  2. **Lớp** (class): Lớp mà một khuôn mãu để tạo ra các đối tượng. Nó định nghĩa các thuộc tính (trạng thái) và phương thức (hành vi) mà đối tượng có. Ví dụ: lớp "Xe" có các thuộc tính như "màu sắc", "số chỗ ngồi" và các phương thức như "chạy, dừng".
  3. [**Đóng gói**](/src/oop/encapsulation/ENCAPSULATION.md) (Encapsulation): Đóng gói là việc gom các nhóm dữ liệu (thuộc tính) và các phương thức (hành vi) lại với nhau thành một đơn vị lớp (class), và che giấu các chi tiết nội bộ của đối tượng với bên ngoài. Điều này giúp bảo vệ dữ liệu và duy trì tính nhất quán.
