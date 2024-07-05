@@ -1,10 +1,11 @@
 /*
   Enum with Abstract method example
  */
-package oop.enums;
+package enums;
 
 /**
  * EnumWithAbstractMethodExample
+ *
  * @author namtv698
  */
 public class EnumWithAbstractMethodExample {
@@ -16,5 +17,5 @@ public class EnumWithAbstractMethodExample {
             System.out.printf("%f %s %f = %f%n", x, op, y, op.apply(x, y));
         }
     }
-    
+
 }

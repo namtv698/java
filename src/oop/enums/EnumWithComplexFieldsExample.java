@@ -1,4 +1,4 @@
-package oop.enums;
+package enums;
 
 /**
  * EnumWithComplexFieldsExample

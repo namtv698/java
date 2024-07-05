@@ -2,7 +2,7 @@
   Enum với các phương thức trừu tượng.
  */
 
-package oop.enums;
+package enums;
 
 public enum Operation {
   PLUS {

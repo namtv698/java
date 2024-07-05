@@ -1,4 +1,4 @@
-package anotations;
+package main;
 
 public class Annotated {
     @MyAnotation(value = "annotation string", number = 1)

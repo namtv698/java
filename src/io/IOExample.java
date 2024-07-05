@@ -1,6 +1,8 @@
-package io;
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class IOExample {
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class IOExample {
             fw.write("Hello World \n");
             fw.write("Hello World \n");
             fw.write("Hello World \n");
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -21,7 +23,7 @@ public class IOExample {
             while (br.ready()) {
                 System.out.println(br.readLine());
             }
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 

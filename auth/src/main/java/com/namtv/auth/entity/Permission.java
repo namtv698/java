@@ -7,21 +7,21 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
-@Entity
+@Entity(name = "m_permission")
 @Data
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class User extends BaseEntity {
+public class Permission {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "user_name", nullable = false)
-    private String userName;
-
-    @Column(name = "password", nullable = false)
-    private String password;
-
     @Column(name = "permission", nullable = false)
     private String permission;
+
+    @Column(name = "description", nullable = true)
+    private String description;
+
 }
