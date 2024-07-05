@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  db_auth:
+    image: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: namtv
+      POSTGRES_USER: namtv
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./auth/init-auth.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  postgres_data:
